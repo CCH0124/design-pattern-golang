@@ -1,12 +1,12 @@
 package test
 
 import (
-	"designpattern/pkg/creatation/factory/simple"
+	"designpattern/pkg/creational/factory/simple"
 	"testing"
 )
 
 func TestCreatePizza(t *testing.T) {
-	factory := &simple.SimplePizzaFactory{}
+	factory := simple.NewSimplePizzaFactory()
 	// 測試案例
 	tests := []struct {
 		pizzaType string
